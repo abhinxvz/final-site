@@ -71,7 +71,7 @@ function App() {
                     <SwiperSlide>
                       <div className="w-full h-full relative overflow-hidden">
                         <img 
-                          src="https://i.postimg.cc/pTCXyrr7/asd.png?q=80&w=2070&auto=format&fit=crop" 
+                          src="https://cdn.shopify.com/s/files/1/0726/0641/7213/files/Untitled-1_1.jpg?v=1743747369?q=80&w=2070&auto=format&fit=crop" 
                           alt="Athletic Banner 1" 
                           className="w-full h-full object-cover"
                         />
