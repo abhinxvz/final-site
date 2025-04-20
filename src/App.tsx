@@ -5,6 +5,7 @@ import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import ProductCard from './components/ProductCard';
 import Navbar from './components/Navbar';
 import About from './components/About';
+import Reviews from './components/Reviews';
 import Newsletter from './components/Newsletter';
 import { CartProvider } from './context/CartContext';
 import { AuthProvider } from './context/AuthContext';
@@ -131,6 +132,7 @@ function App() {
                     </div>
                   </div>
 
+                  <Reviews />
                   <About />
                   <Newsletter onSubscribe={handleNewsletter} />
                 </main>
