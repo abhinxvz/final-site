@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+@font-face {
+  font-family: 'Quantum';
+  src: url('./fonts/quantum.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --primary: #ef4444;
+  --primary-dark: #dc2626;
+  --background: #111111;
+  --text: #ffffff;
+}
+
+/* Custom cursor styles */
+* {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Ccircle cx='6' cy='6' r='5' stroke='%23ef4444' stroke-width='2'/%3E%3C/svg%3E") 6 6, auto;
+}
+
+button, a, [role="button"], select, input[type="submit"], input[type="button"], input[type="reset"] {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Ccircle cx='8' cy='8' r='7' fill='%23ef4444'/%3E%3C/svg%3E") 8 8, pointer !important;
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+/* Swiper custom styles */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ef4444 !important;
+}
+
+.swiper-pagination-bullet {
+  background: #ef4444 !important;
+  opacity: 0.5 !important;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1 !important;
+}
+
+@layer components {
+  .hover-card {
+    @apply transition-all duration-300;
+  }
+
+  .hover-card:hover {
+    @apply -translate-y-1 shadow-lg shadow-primary/10;
+  }
+
+  .btn-primary {
+    @apply bg-[#ef4444] text-white px-6 py-3 rounded-lg font-medium 
+           transition-all duration-200 hover:bg-[#dc2626] 
+           focus:ring-2 focus:ring-[#ef4444] focus:ring-offset-2 
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-2 rounded-lg border border-gray-700 bg-background-card
+           focus:ring-2 focus:ring-[#ef4444] focus:border-transparent 
+           focus:outline-none transition-all duration-200;
+  }
+}
