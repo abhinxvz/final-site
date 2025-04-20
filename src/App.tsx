@@ -59,7 +59,7 @@ function App() {
                   <Navbar />
                 </div>
 
-                <div className="w-full h-[600px]">
+                <div className="w-full h-screen">
                   <Swiper
                     modules={[Autoplay, Navigation, Pagination]}
                     navigation
