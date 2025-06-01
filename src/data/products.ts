@@ -16,7 +16,7 @@ export const products = [
   {
     id: 3,
     name: "TOXIC OVERSIZED TEE",
-    price: 1,
+    price: 799,
     image: "https://onefortee.com/cdn/shop/files/DSC1851_1199x1800.jpg?v=1723901564",
     description: "LIMITED TO 15 PIECES- EACH NUMBERED: Dispatches in 2.5 weeks (pre-order)"
   },
